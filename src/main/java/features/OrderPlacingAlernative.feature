@@ -7,7 +7,6 @@ Scenario Outline: TC_005_Placing the order with sequence of steps
 Given Click on SignIn link
 Then  Enter the username as <username> and password <password>
 Then Click the Sign in button
-Then Click on on the link MY ADDRESSES
 Then Click Summer section under Womens tab
 Then Change the item view into list
 Then Click on the firt item of the page
@@ -43,7 +42,7 @@ And User sign out of the application
 
 Examples:
 |username|password|Qty|size|
-|Automation@american.com|Jan@2020|5|L|
+|Automation@americantech.com|Jan@2020|5|L|
 
 
 

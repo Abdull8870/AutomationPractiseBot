@@ -18,7 +18,6 @@ public class HooksFile extends SeleniumBase {
 	
 	@Before
 	public void before(Scenario sc) throws IOException {
-		System.out.println("Hooks");
 		testCaseName = sc.getName();
 		testDescription = sc.getId();
 		Startreport(testCaseName,testDescription);

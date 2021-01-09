@@ -44,7 +44,6 @@ public class loginPage extends ProjectSpecificMethods {
 	
 	@Then("Enter the username as (.*) and password (.*)")
 	public loginPage enerUsername(String userName,String passWord) {
-		System.out.println(userName);
 		clearAndType(eleEmailId, userName);
 		clearAndType(elePassword, passWord);
 		

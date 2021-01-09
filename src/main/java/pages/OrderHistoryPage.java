@@ -19,10 +19,18 @@ public class OrderHistoryPage extends ProjectSpecificMethods{
 	@FindBy(how=How.LINK_TEXT,using="Google Plus")
 	private WebElement eleGooglePlus;
 	
+	@FindBy(how=How.XPATH,using="//ul[@class=\"footer_links clearfix\"]")
+	private WebElement eleFooter;
+	
+	@FindBy(how=How.XPATH,using="//tr[@class=\"last_item \"]")
+	private  WebElement eleLastItem;
+	
 	@Then("User takes screenshot of the order summary details")
 	public OrderHistoryPage takeOrderHistoryScreenshot() {
-		scrollTillTheElement(eleGooglePlus);
-		addSnapToWord("The OrderSummary ScreenShot", takeScreenShot());
+		addSnapToWord("The OrderSummary ScreenShot 1", takeScreenShot());
+		ScrolDown(0, 500);
+//		scrollTillTheElement(eleLastItem);
+		addSnapToWord("The OrderSummary ScreenShot 2", takeScreenShot());
 		return this;
 	}
 	

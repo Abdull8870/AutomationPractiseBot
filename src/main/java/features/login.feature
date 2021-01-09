@@ -2,7 +2,7 @@ Feature: Leaftaps login functionality
 #Author : Abdul
 
 #1
-Scenario Outline: TC001_Enter a new address
+Scenario Outline: Sample test case
 
 Given Click on SignIn link
 Then Enter the username as <username> and password <password>
@@ -18,6 +18,6 @@ Then Click Summer section under Womens tab
 
 Examples:
 |username|password|firstName|lastName|companyName|addressLine1|addressLine2|cityName|stateName|postCode|countryName|homeNum|mobileNum|info|aliasName|
-|Automation@american.com|Jan@2020|firstName|lastName|companyName|addressLine1|addressLine2|United States|California|60028|United States|88102030|8879501|info|aliasName|
+|Automation@americantech.com|Jan@2020|firstName|lastName|companyName|addressLine1|addressLine2|United States|California|60028|United States|88102030|8879501|info|aliasName|
 
 

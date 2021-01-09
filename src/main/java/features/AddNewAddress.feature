@@ -17,6 +17,6 @@ Then Enter the alias name <aliasName> and click save
 
 Examples:
 |username|password|firstName|lastName|companyName|addressLine1|addressLine2|cityName|stateName|postCode|countryName|homeNum|mobileNum|info|aliasName|
-|Automation@american.com|Jan@2020|firstName|lastName|companyName|addressLine1|addressLine2|United States|California|60028|United States|88102030|8879501|info|aliasName3|
+|Automation@americantech.com|Jan@2020|Virat|Kohli|Viratkohli foundation|Delhi|Feroz shah kotla|Delhi|California|60028|United States|88102030|8879501|info|office 2|
 
 

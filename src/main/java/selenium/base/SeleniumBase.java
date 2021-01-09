@@ -93,7 +93,6 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 			wait = new WebDriverWait(driver, 20);
 			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			text = ele.getText();
-			System.out.println(text);
 			ele.click();
 			reportStep("The Element "+text+" clicked", "pass"); 
 			addSnapToWord("The Element "+text+" is clicked", takeScreenShot());
@@ -156,7 +155,7 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 	public RemoteWebDriver startApp(String browser, String url) {
 		try {
 			if(browser.equalsIgnoreCase("chrome")) {
-				System.out.println("Inside Chrome");
+
 				System.setProperty("webdriver.chrome.driver",
 						"./drivers/chromedriver.exe");
 				String path=System.getProperty("user.dir")+"\\downloads";
@@ -178,7 +177,7 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 				driver = new InternetExplorerDriver();
 			}
 			
-			System.out.println(url);
+		
 //			driver.navigate().to(url);
 			driver.manage().window().maximize();
 			driver.manage().timeouts().implicitlyWait(20, TimeUnit.SECONDS);
@@ -375,5 +374,18 @@ public class SeleniumBase extends Reporter implements Browser, Element{
 		}
 
 }
+	
+	public void ScrolDown(int x, int y) {
+		// TODO Auto-generated method stub
+		try {
+			JavascriptExecutor js=(JavascriptExecutor)driver;
+			String script="window.scrollBy("+x+","+y+")";
+			js.executeScript(script, "");
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+			reportStep("Some internal error occured", "fail");
+		}
+	}
 	
 }

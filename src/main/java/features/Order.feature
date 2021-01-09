@@ -21,5 +21,5 @@ And User sign out of the application
 
 Examples:
 |username|password|Qty|size|
-|Automation@american.com|Jan@2020|5|L|
+|Automation@americantech.com|Jan@2020|5|L|
 
