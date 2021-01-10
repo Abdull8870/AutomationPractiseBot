@@ -2,7 +2,7 @@
 
 Click on the code dropdown and download the project as a zip file.
 
-Application automated : * [AutomationPractice](http://automationpractice.com/index.php)
+Application automated :  [Click here](http://automationpractice.com/index.php)
 
 ## How to use
   
